@@ -17,50 +17,9 @@ struct BillCalculatorView: View {
         ZStack{
             switch navigation.view{
             case .calcultor:
-                
-                    ScrollView{
-                        VStack(alignment:.leading){
-                            
-                            deliveryView()
-                            
-                            taxesView()
-                            
-                            servicesView()
-                            
-                            divider()
-                            
-                            ForEach(viewModel.billCreationModel.users.indices, id:\.self) { index in
-                                UserView(userModel: $viewModel.billCreationModel.users[index])
-                            }
-                        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity,alignment: .top)
-                        .padding()
-                        .toolbar{
-                            Button(action: {
-                                viewModel.checkIfthereIsItemForEveryUser()
-                                if(viewModel.showResult){
-                                    navigation.view = .result
-                                }
-                                    
-                            }, label: {
-                                Text("Calculate Bill")
-                            })
-                        }
-                    }
-                    .alert(isPresented: $viewModel.showErrorAlert) {
-                        Alert(title: Text(viewModel.errorMessage), message: nil,
-                              dismissButton:
-                                .default(Text("Ok"))
-                        )
-                    }
-                    .navigationTitle(Text("Calculator"))
+                calculator()
             case .result:
-                VStack{
-                    ForEach(viewModel.billCreationModel.users, id:\.id){
-                        user in
-                        Text("\(user.userName) : \(user.totalCost)")
-                    }
-                }
-                .navigationTitle(Text("Result"))
+                ResultView(users: viewModel.billCreationModel.users)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -72,6 +31,46 @@ struct BillCalculatorView: View {
         if (viewModel.billCreationModel.delivery ?? false) || (viewModel.billCreationModel.taxes ?? false) || (viewModel.billCreationModel.services ?? false) {
             Divider().padding(.top,20)
         }
+    }
+    
+    @ViewBuilder
+    func calculator() -> some View{
+        
+            ScrollView{
+                VStack(alignment:.leading){
+                    
+                    deliveryView()
+                    
+                    taxesView()
+                    
+                    servicesView()
+                    
+                    divider()
+                    
+                    ForEach(viewModel.billCreationModel.users.indices, id:\.self) { index in
+                        UserView(userModel: $viewModel.billCreationModel.users[index])
+                    }
+                }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity,alignment: .top)
+                .padding()
+                .toolbar{
+                    Button(action: {
+                        viewModel.checkIfthereIsItemForEveryUser()
+                        if(viewModel.showResult){
+                            navigation.view = .result
+                        }
+                            
+                    }, label: {
+                        Text("Calculate Bill")
+                    })
+                }
+            }
+            .alert(isPresented: $viewModel.showErrorAlert) {
+                Alert(title: Text(viewModel.errorMessage), message: nil,
+                      dismissButton:
+                        .default(Text("Ok"))
+                )
+            }
+            .navigationTitle(Text("Calculator"))
     }
     
 }

@@ -19,6 +19,7 @@
 		7E2B86E426506BF000D2F30C /* BillCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B86E326506BF000D2F30C /* BillCalculatorView.swift */; };
 		7E5E8B4D2647D92900444C07 /* BillCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E8B4C2647D92900444C07 /* BillCreationView.swift */; };
 		7E5E8B512647DE0500444C07 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E8B502647DE0500444C07 /* CheckBoxView.swift */; };
+		7E6A222D278C475F008008F9 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A222C278C475F008008F9 /* ResultView.swift */; };
 		7E7FF9172651AB30006B6FF5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF9162651AB30006B6FF5 /* UserModel.swift */; };
 		7E7FF91A2651AB7E006B6FF5 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF9192651AB7E006B6FF5 /* ItemModel.swift */; };
 		7E7FF91E2651AE35006B6FF5 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF91D2651AE35006B6FF5 /* ItemView.swift */; };
@@ -45,6 +46,7 @@
 		7E2B86E326506BF000D2F30C /* BillCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCalculatorView.swift; sourceTree = "<group>"; };
 		7E5E8B4C2647D92900444C07 /* BillCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCreationView.swift; sourceTree = "<group>"; };
 		7E5E8B502647DE0500444C07 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		7E6A222C278C475F008008F9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		7E7FF9162651AB30006B6FF5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7E7FF9192651AB7E006B6FF5 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		7E7FF91D2651AE35006B6FF5 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		7E00D0E92636D6E3009EE732 /* Bill Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				7E6A222A278C4725008008F9 /* BillResult */,
 				7E2B86DE26506B1300D2F30C /* BillCalculator */,
 				7E5E8B472647D35300444C07 /* Bill Creation Module */,
 				7E00D0FF2636D786009EE732 /* Shared Module */,
@@ -219,6 +222,22 @@
 			path = Repo;
 			sourceTree = "<group>";
 		};
+		7E6A222A278C4725008008F9 /* BillResult */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A222B278C473A008008F9 /* View */,
+			);
+			path = BillResult;
+			sourceTree = "<group>";
+		};
+		7E6A222B278C473A008008F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A222C278C475F008008F9 /* ResultView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7ED3663F26F61BF6002F5DDF /* SharedView */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +334,7 @@
 				7E00D0EF2636D6E3009EE732 /* ContentView.swift in Sources */,
 				7E7FF91E2651AE35006B6FF5 /* ItemView.swift in Sources */,
 				7E7FF9172651AB30006B6FF5 /* UserModel.swift in Sources */,
+				7E6A222D278C475F008008F9 /* ResultView.swift in Sources */,
 				7ED3663926F61ABB002F5DDF /* DeliveryView.swift in Sources */,
 				7E00D1022636D7A8009EE732 /* TextField.swift in Sources */,
 			);

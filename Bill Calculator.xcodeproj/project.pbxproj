@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E00D0EB2636D6E3009EE732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00D0EA2636D6E3009EE732 /* AppDelegate.swift */; };
-		7E00D0ED2636D6E3009EE732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00D0EC2636D6E3009EE732 /* SceneDelegate.swift */; };
 		7E00D0EF2636D6E3009EE732 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00D0EE2636D6E3009EE732 /* ContentView.swift */; };
 		7E00D0F12636D6E6009EE732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E00D0F02636D6E6009EE732 /* Assets.xcassets */; };
 		7E00D0F42636D6E6009EE732 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E00D0F32636D6E6009EE732 /* Preview Assets.xcassets */; };
 		7E00D0F72636D6E6009EE732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E00D0F52636D6E6009EE732 /* LaunchScreen.storyboard */; };
 		7E00D1022636D7A8009EE732 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00D1012636D7A8009EE732 /* TextField.swift */; };
 		7E00D1062636DBFF009EE732 /* TextFieldUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00D1052636DBFE009EE732 /* TextFieldUtils.swift */; };
+		7E2A7882278D65C500A83F6B /* BillCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A7881278D65C500A83F6B /* BillCalculatorApp.swift */; };
+		7E2A7886278D718900A83F6B /* BillInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A7885278D718900A83F6B /* BillInfoView.swift */; };
+		7E2A788A278D886D00A83F6B /* BillsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A7889278D886D00A83F6B /* BillsListView.swift */; };
 		7E2B86DC2650699F00D2F30C /* BillCreationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B86DB2650699F00D2F30C /* BillCreationModel.swift */; };
 		7E2B86E426506BF000D2F30C /* BillCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B86E326506BF000D2F30C /* BillCalculatorView.swift */; };
 		7E5E8B4D2647D92900444C07 /* BillCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E8B4C2647D92900444C07 /* BillCreationView.swift */; };
 		7E5E8B512647DE0500444C07 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E8B502647DE0500444C07 /* CheckBoxView.swift */; };
 		7E6A222D278C475F008008F9 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A222C278C475F008008F9 /* ResultView.swift */; };
+		7E6A2230278C65BF008008F9 /* BillCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A222E278C65BF008008F9 /* BillCalculator.xcdatamodeld */; };
+		7E6A2251278C7B0D008008F9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A2250278C7B0D008008F9 /* Persistence.swift */; };
+		7E6A2254278C7B9A008008F9 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A2253278C7B9A008008F9 /* CoreDataView.swift */; };
 		7E7FF9172651AB30006B6FF5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF9162651AB30006B6FF5 /* UserModel.swift */; };
 		7E7FF91A2651AB7E006B6FF5 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF9192651AB7E006B6FF5 /* ItemModel.swift */; };
 		7E7FF91E2651AE35006B6FF5 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FF91D2651AE35006B6FF5 /* ItemView.swift */; };
@@ -34,19 +38,23 @@
 
 /* Begin PBXFileReference section */
 		7E00D0E72636D6E3009EE732 /* Bill Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bill Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E00D0EA2636D6E3009EE732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E00D0EC2636D6E3009EE732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E00D0EE2636D6E3009EE732 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E00D0F02636D6E6009EE732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E00D0F32636D6E6009EE732 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E00D0F82636D6E6009EE732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E00D1012636D7A8009EE732 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		7E00D1052636DBFE009EE732 /* TextFieldUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldUtils.swift; sourceTree = "<group>"; };
+		7E2A7881278D65C500A83F6B /* BillCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCalculatorApp.swift; sourceTree = "<group>"; };
+		7E2A7885278D718900A83F6B /* BillInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInfoView.swift; sourceTree = "<group>"; };
+		7E2A7889278D886D00A83F6B /* BillsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsListView.swift; sourceTree = "<group>"; };
 		7E2B86DB2650699F00D2F30C /* BillCreationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCreationModel.swift; sourceTree = "<group>"; };
 		7E2B86E326506BF000D2F30C /* BillCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCalculatorView.swift; sourceTree = "<group>"; };
 		7E5E8B4C2647D92900444C07 /* BillCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCreationView.swift; sourceTree = "<group>"; };
 		7E5E8B502647DE0500444C07 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		7E6A222C278C475F008008F9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7E6A222F278C65BF008008F9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7E6A2250278C7B0D008008F9 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7E6A2253278C7B9A008008F9 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
 		7E7FF9162651AB30006B6FF5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7E7FF9192651AB7E006B6FF5 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		7E7FF91D2651AE35006B6FF5 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -90,17 +98,19 @@
 		7E00D0E92636D6E3009EE732 /* Bill Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				7E6A222A278C4725008008F9 /* BillResult */,
-				7E2B86DE26506B1300D2F30C /* BillCalculator */,
+				7E2A7887278D884100A83F6B /* BillsListModule */,
+				7E6A2252278C7B87008008F9 /* TestCoreData */,
+				7E6A222A278C4725008008F9 /* BillResultModule */,
+				7E2B86DE26506B1300D2F30C /* BillModule */,
 				7E5E8B472647D35300444C07 /* Bill Creation Module */,
 				7E00D0FF2636D786009EE732 /* Shared Module */,
-				7E00D0EA2636D6E3009EE732 /* AppDelegate.swift */,
-				7E00D0EC2636D6E3009EE732 /* SceneDelegate.swift */,
 				7E00D0EE2636D6E3009EE732 /* ContentView.swift */,
 				7E00D0F02636D6E6009EE732 /* Assets.xcassets */,
 				7E00D0F52636D6E6009EE732 /* LaunchScreen.storyboard */,
 				7E00D0F82636D6E6009EE732 /* Info.plist */,
 				7E00D0F22636D6E6009EE732 /* Preview Content */,
+				7E6A222E278C65BF008008F9 /* BillCalculator.xcdatamodeld */,
+				7E2A7881278D65C500A83F6B /* BillCalculatorApp.swift */,
 			);
 			path = "Bill Calculator";
 			sourceTree = "<group>";
@@ -116,6 +126,7 @@
 		7E00D0FF2636D786009EE732 /* Shared Module */ = {
 			isa = PBXGroup;
 			children = (
+				7E6A2250278C7B0D008008F9 /* Persistence.swift */,
 				7E00D1002636D792009EE732 /* View */,
 				7E00D1052636DBFE009EE732 /* TextFieldUtils.swift */,
 			);
@@ -131,14 +142,51 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7E2B86DE26506B1300D2F30C /* BillCalculator */ = {
+		7E2A7883278D714E00A83F6B /* BillInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				7ED3663826F61ABB002F5DDF /* DeliveryView.swift */,
+				7E2A7885278D718900A83F6B /* BillInfoView.swift */,
+				7EF794362650777C00E005EA /* UserView.swift */,
+				7E7FF91D2651AE35006B6FF5 /* ItemView.swift */,
+				7ED3663B26F61B13002F5DDF /* TaxesView.swift */,
+				7ED3663D26F61B77002F5DDF /* SevicesView.swift */,
+			);
+			path = BillInfoView;
+			sourceTree = "<group>";
+		};
+		7E2A7884278D716300A83F6B /* BillResultView */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A222C278C475F008008F9 /* ResultView.swift */,
+			);
+			path = BillResultView;
+			sourceTree = "<group>";
+		};
+		7E2A7887278D884100A83F6B /* BillsListModule */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A7888278D885A00A83F6B /* View */,
+			);
+			path = BillsListModule;
+			sourceTree = "<group>";
+		};
+		7E2A7888278D885A00A83F6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A7889278D886D00A83F6B /* BillsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E2B86DE26506B1300D2F30C /* BillModule */ = {
 			isa = PBXGroup;
 			children = (
 				7E2B86E126506BC100D2F30C /* ViewModel */,
 				7E2B86E026506BBC00D2F30C /* View */,
 				7E2B86DF26506BB600D2F30C /* Model */,
 			);
-			path = BillCalculator;
+			path = BillModule;
 			sourceTree = "<group>";
 		};
 		7E2B86DF26506BB600D2F30C /* Model */ = {
@@ -154,13 +202,10 @@
 		7E2B86E026506BBC00D2F30C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E2A7884278D716300A83F6B /* BillResultView */,
+				7E2A7883278D714E00A83F6B /* BillInfoView */,
 				7ED3663F26F61BF6002F5DDF /* SharedView */,
 				7E2B86E326506BF000D2F30C /* BillCalculatorView.swift */,
-				7ED3663826F61ABB002F5DDF /* DeliveryView.swift */,
-				7EF794362650777C00E005EA /* UserView.swift */,
-				7E7FF91D2651AE35006B6FF5 /* ItemView.swift */,
-				7ED3663B26F61B13002F5DDF /* TaxesView.swift */,
-				7ED3663D26F61B77002F5DDF /* SevicesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,20 +267,27 @@
 			path = Repo;
 			sourceTree = "<group>";
 		};
-		7E6A222A278C4725008008F9 /* BillResult */ = {
+		7E6A222A278C4725008008F9 /* BillResultModule */ = {
 			isa = PBXGroup;
 			children = (
 				7E6A222B278C473A008008F9 /* View */,
 			);
-			path = BillResult;
+			path = BillResultModule;
 			sourceTree = "<group>";
 		};
 		7E6A222B278C473A008008F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7E6A222C278C475F008008F9 /* ResultView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7E6A2252278C7B87008008F9 /* TestCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7E6A2253278C7B9A008008F9 /* CoreDataView.swift */,
+			);
+			path = TestCoreData;
 			sourceTree = "<group>";
 		};
 		7ED3663F26F61BF6002F5DDF /* SharedView */ = {
@@ -317,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2A7882278D65C500A83F6B /* BillCalculatorApp.swift in Sources */,
 				7EF794372650777C00E005EA /* UserView.swift in Sources */,
 				7EF384E226F8637F00C7648A /* BillCalculatorViewModel.swift in Sources */,
 				7E2B86DC2650699F00D2F30C /* BillCreationModel.swift in Sources */,
@@ -325,15 +378,18 @@
 				7E2B86E426506BF000D2F30C /* BillCalculatorView.swift in Sources */,
 				7E5E8B512647DE0500444C07 /* CheckBoxView.swift in Sources */,
 				7E5E8B4D2647D92900444C07 /* BillCreationView.swift in Sources */,
+				7E6A2254278C7B9A008008F9 /* CoreDataView.swift in Sources */,
 				7EBA2A9A264F29FE00787D0B /* BillCreationViewModel.swift in Sources */,
+				7E2A7886278D718900A83F6B /* BillInfoView.swift in Sources */,
 				7E00D1062636DBFF009EE732 /* TextFieldUtils.swift in Sources */,
-				7E00D0EB2636D6E3009EE732 /* AppDelegate.swift in Sources */,
-				7E00D0ED2636D6E3009EE732 /* SceneDelegate.swift in Sources */,
+				7E6A2251278C7B0D008008F9 /* Persistence.swift in Sources */,
 				7ED3663C26F61B13002F5DDF /* TaxesView.swift in Sources */,
 				7ED3664126F61C22002F5DDF /* TextFieldWithHeader.swift in Sources */,
 				7E00D0EF2636D6E3009EE732 /* ContentView.swift in Sources */,
 				7E7FF91E2651AE35006B6FF5 /* ItemView.swift in Sources */,
 				7E7FF9172651AB30006B6FF5 /* UserModel.swift in Sources */,
+				7E2A788A278D886D00A83F6B /* BillsListView.swift in Sources */,
+				7E6A2230278C65BF008008F9 /* BillCalculator.xcdatamodeld in Sources */,
 				7E6A222D278C475F008008F9 /* ResultView.swift in Sources */,
 				7ED3663926F61ABB002F5DDF /* DeliveryView.swift in Sources */,
 				7E00D1022636D7A8009EE732 /* TextField.swift in Sources */,
@@ -538,6 +594,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E6A222E278C65BF008008F9 /* BillCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E6A222F278C65BF008008F9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7E6A222F278C65BF008008F9 /* Model.xcdatamodel */;
+			path = BillCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7E00D0DF2636D6E3009EE732 /* Project object */;
 }

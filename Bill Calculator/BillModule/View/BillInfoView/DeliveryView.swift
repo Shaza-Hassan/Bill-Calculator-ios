@@ -8,8 +8,7 @@
 import Foundation
 import SwiftUI
 
-extension BillCalculatorView{
-    
+extension BillInfoView{
     @ViewBuilder
     func deliveryView() -> some View {
         if viewModel.billCreationModel.delivery ?? false{

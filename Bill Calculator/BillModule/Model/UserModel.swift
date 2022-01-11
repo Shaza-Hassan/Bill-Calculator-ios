@@ -13,7 +13,7 @@ class UserModel:Identifiable,Equatable,ObservableObject {
         return lhs.id == rhs.id
     }
     
-    var id: Int = 1
+    var id: String = UUID().uuidString
     var userName: String = ""
     var totalCost:Double = 0.0
     var items: [ItemModel] = []

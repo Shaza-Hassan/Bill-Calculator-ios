@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-extension BillCalculatorView{
+extension BillInfoView{
     
     @ViewBuilder
     func servicesView() -> some View {

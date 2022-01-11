@@ -12,7 +12,7 @@ class ItemModel:ObservableObject,Identifiable,Equatable {
         lhs.id == rhs.id
     }
     
-    var id = UUID()
+    var id = UUID().uuidString
     var itemName:String = ""
     var itemPrice:Double?
 }

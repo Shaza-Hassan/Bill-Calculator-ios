@@ -60,7 +60,6 @@ class BillCreationViewModel: ObservableObject{
     func createUsers(){
         for index in 1...Int(noOfPeople)! {
             let userModel = UserModel()
-            userModel.id = index
             userModel.userName = "User \(index)"
             creationBillModel.users.append(userModel)
         }
